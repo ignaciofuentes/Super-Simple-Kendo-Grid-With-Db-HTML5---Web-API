@@ -1,0 +1,22 @@
+﻿<div data-role="view" data-init="mobileListViewFiltering" data-title="Cars" id="list">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-align="right" data-role="button" class="nav-button" data-transition="overlay:up" href="createGame.html">+</a>
+        </div>
+    </header>
+    <ul id="listview" class="inboxList"></ul>
+    <ul data-role="actionsheet" id="inboxActions" data-popup='{"direction": "left"}'>
+        <li class="km-actionsheet-title">Are you sure?</li>
+        <li><a href="#" class="danger" data-action="deleteGame">Yes. Delete!</a></li>
+    </ul>
+</div>
+<script type="text/x-kendo-tmpl" id="mobile-listview-filtering-template">
+    <h3 class="time">#:Name#</h3>
+    <a class="reply"
+       data-role="button"
+       data-rel="actionsheet"
+       href="\\#inboxActions"
+       data-actionsheet-context="#:id#">Delete</a>
+    <h2>#:name#</h2>
+</script>

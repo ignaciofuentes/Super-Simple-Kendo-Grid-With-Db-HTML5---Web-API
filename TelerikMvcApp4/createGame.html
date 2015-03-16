@@ -1,0 +1,18 @@
+﻿<div data-role="view" id="create" data-model="myVm">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title">New Car</span>
+            <a data-align="left" data-role="button" class="nav-button" href="list.html">Cancel</a>
+            <a data-align="right" data-role="button" class="nav-button" data-bind="click: saveCar">Save</a>
+        </div>
+    </header>
+
+    <ul data-role="listview" data-style="inset">
+        <li>
+            <label>
+                Name
+                <input type="text" data-bind="value: car.Name" />
+            </label>
+        </li>
+    </ul>
+</div>
